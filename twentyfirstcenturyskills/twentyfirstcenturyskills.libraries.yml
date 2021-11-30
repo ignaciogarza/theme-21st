@@ -1,0 +1,26 @@
+twentyfirstcenturyskills-css:
+  version: 1
+  css:
+    bootstrap:
+      css/bootstrap/bootstrap.min.css: {}
+    base:
+      css/base/styles.css: {}
+    layout:
+      css/layout/layout.css: {}
+    component:
+      css/component/menu.css: {}
+
+global-styling:
+  css:
+    base:
+      https://live-idb-config.pantheonsite.io/themes/custom/iadb/css/iadb-styles.css?v=0.0.4: { type: external, minified: true }
+  js:
+    https://live-idb-config.pantheonsite.io/modules/custom/api_menu_items/V.0.0.4/js/lib/template-idb.js: { type: external, minified: true }
+    https://live-idb-config.pantheonsite.io/modules/custom/api_menu_items/V.0.0.4/js/lib/underscore-min.js: { type: external, minified: true }
+    https://live-idb-config.pantheonsite.io/modules/custom/api_menu_items/V.0.0.4/js/main.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    - core/drupal.ajax

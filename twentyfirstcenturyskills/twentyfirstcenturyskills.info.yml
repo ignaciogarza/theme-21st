@@ -1,0 +1,20 @@
+name: 21st Century Skills
+type: theme
+description: 2020 Theme for 21st Century Skills Website
+version: 0.0.1
+base theme: stable
+core_version_requirement: ^8.8 || ^9
+screenshot: 21stCenturySkills.PNG
+
+libraries:
+  - twentyfirstcenturyskills/twentyfirstcenturyskills-css
+  - twentyfirstcenturyskills/global-styling
+  - twentyfirstcenturyskills/global-js
+
+regions:
+  header: Header
+  21stmenu: Navigation
+  subMenu: AboutNavigation
+  content: Content
+  news: News
+  footer: Footer

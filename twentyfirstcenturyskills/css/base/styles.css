@@ -1,0 +1,1409 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Gotham-Book;
+  src: url(/themes/twentyfirstcenturyskills/fonts/gotham/Gotham-Book.woff);
+}
+
+@font-face {
+  font-family: Gotham-Bold;
+  src: url(/themes/twentyfirstcenturyskills/fonts/gotham/Gotham-Bold.woff);
+}
+
+body,
+html,
+.container-fluid,
+.container {
+  font-family: Gotham-Book, sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 24px !important;
+}
+
+.vh20 {
+  min-height: 20vh;
+}
+.vh25 {
+  min-height: 25vh;
+}
+
+.vh40 {
+  min-height: 40vh;
+}
+
+.vh50 {
+  min-height: 50vh;
+}
+
+.vh60 {
+  min-height: 60vh;
+}
+.vh70 {
+  min-height: 70vh;
+}
+
+.vh75 {
+  min-height: 75vh;
+}
+
+.vh80 {
+  min-height: 80vh;
+}
+
+.vh100 {
+  min-height: 100vh;
+}
+
+.titleBold {
+  font-family: Gotham-Bold;
+  color: #363d4a;
+}
+
+.mainNav {
+  padding-top: 0px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 1;
+  padding-top: 0;
+  padding-bottom: 0.5em;
+  transition: background-color 0.35s ease-in-out;
+}
+
+.mainNav .navItems {
+  width: 1000px;
+  margin: 0 auto;
+}
+.mainNav .listItemsMainMenu {
+  display: inline-block;
+}
+
+.mobileMenuBurger {
+  display: inline-block;
+}
+
+#burgerMenu {
+  display: none;
+}
+
+.mainNav .logo21 {
+  width: 200px;
+  display: inline-block;
+  margin-right: 40px;
+  transition: width 0.35s ease-in-out;
+}
+
+.mainNav .logo21 img {
+  width: 110%;
+}
+
+.mainNav ul {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.mainNav ul li {
+  display: inline-block;
+  padding: 0.6em 0.4em;
+}
+
+.mainNav ul li a {
+  color: white;
+  font-family: Gotham-Bold;
+  font-size: 12px;
+}
+
+.mainNav ul li a:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+#headerSection {
+  max-width: 764px;
+}
+
+#headerSection h1 {
+  font-size: 50px;
+  font-family: Gotham-Bold;
+}
+
+#headerSection h2 {
+  font-size: 30px;
+  font-family: Gotham-Bold;
+  margin-bottom: 0;
+  line-height: 0.5;
+}
+
+.btnGrey {
+  display: block;
+  margin: 1em auto;
+  width: 231px;
+  text-align: center;
+}
+
+.btnLandingNews {
+  position: relative;
+  top: -100px;
+}
+
+.btnGrey a {
+  display: block;
+  color: white;
+  background-color: #363d4a;
+  padding: 15px;
+  border-radius: 31px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.btnGrey a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.btnWhite {
+  display: block;
+  margin: 1em auto;
+  width: 231px;
+  text-align: center;
+}
+.btnWhite a {
+  display: block;
+  color: #363d4a;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 31px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.btnWhite a:hover {
+  text-decoration: none;
+  color: #363d4a;
+}
+.btnTransparent {
+  display: block;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.btnTransparent a {
+  display: inline-block;
+  color: white;
+  background-color: none;
+  padding: 15px 20px;
+  border-radius: 31px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: 1px solid white;
+  margin-right: 0.5em;
+  min-width: 120px;
+  text-align: center;
+}
+
+.btnTransparent a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#landingFrame h1 {
+  font-size: 85px;
+  font-weight: bold;
+  font-family: Gotham-Bold;
+  margin-top: 100px;
+}
+
+.upperTitle {
+  font-weight: bold;
+  font-family: Gotham-Bold;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+  margin-left: 150px;
+  padding-top: 40px;
+  line-height: 0.8;
+  letter-spacing: 8px;
+}
+
+.upperTitle.whiteBg {
+  color: #e4e4e4;
+}
+
+.upperTitle.mustardBg {
+  color: rgba(0, 0, 0, 0.2);
+  margin-left: 160px;
+}
+
+#landingFrame h4 {
+  letter-spacing: 6px;
+}
+
+#landingFrame hr {
+  width: 380px;
+  color: white;
+  background-color: white;
+}
+
+.bgIndexMainSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_indexMainSection.jpg");
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bgSkillsForLifeSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_SkillsForLifeMainSection.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bgPartnersMainSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_Partner_Mainsection.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bgContactUsBottomSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_contactus_section_bottom.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.bgContactUsBottomSectionWhite {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_contactus_white_section_bottom.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.bgAboutUsHeaderMainSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_about_us_HeaderSection.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bgFutureSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_skillsforLifesection.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bgAboutUsPartnersSections {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_aboutUsOurPartnersSection.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgOurStorySection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_aboutUsOurStorySection.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgSkillsForLifeMainSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_SkillsForLifeMainSection_header.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgSkillListSec {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_skillListSection.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bgDisruptingEducationMainSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_DisruptingEducation_mainSection.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgTechAndEdSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_techanded_section.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgWeBelieveIn {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_weBeliveIn_Section.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.bgContactUsHeaderSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_contactus_HeaderSection.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgMediaHeaderSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_media_HeaderSection.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgSolutionsInterventions {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_solutions_inter_Section.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgHeaderSolutions {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_solutions_HeaderSection.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bgSolutionsSchools {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_solutions_schools_Section.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgLaborForce {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_laborForce_Section.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bgSolutionsSpotlight {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_solutions_spotlight_Section.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgPartnersHeaderSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_partners_HeaderSection.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgLetsWorkTogether {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_WokrTogetherSection.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgTheCoalitionSection {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_theCoalition_Section.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgAreYouAnActor {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_areyouanActor_Section.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgHeaderAssess {
+  background-image: url("/themes/twentyfirstcenturyskills/images/bg_assess_HeaderSection.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.itemSkills {
+  margin-left: 50px;
+  vertical-align: top;
+  font-weight: 800;
+}
+
+.itemSkills img {
+  width: 60px;
+
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.itemSkills p {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.itemSkills span {
+  font-size: 22px;
+  font-family: Gotham-Bold;
+}
+
+.disruptingImage {
+  font-family: Gotham-Bold;
+  color: #363d4a;
+}
+.disruptingImage img {
+  width: 220px;
+  transition: transform 0.2s;
+}
+.disruptingImage img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.bgmustard {
+  background-color: #f2da78;
+}
+
+.contactusBottom i {
+  font-size: 25px;
+  padding: 5px 15px;
+}
+
+.contactusBottom a:hover {
+  text-decoration: none;
+}
+
+.subMenu {
+  background-color: #f5f5f5;
+}
+
+.subMenu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.subMenu ul li {
+  display: inline-block;
+}
+
+.subMenu ul li a {
+  color: #cfcfcf;
+  font-family: Gotham-Bold;
+  padding-right: 1.5em;
+}
+
+.subMenu ul li a:hover {
+  text-decoration: none;
+}
+
+.subMenu ul li a.selected {
+  color: black;
+}
+
+.ourApproachImage {
+  max-width: 1000px;
+  width: 100%;
+  display: block;
+  margin: 1em auto;
+}
+
+.ourApproachImage img {
+  width: 100%;
+}
+
+.videosLaunchEvent ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.videosLaunchEvent ul li {
+  display: inline-block;
+  width: 20%;
+  margin: 1em;
+  vertical-align: top;
+  text-align: left;
+}
+
+.videosLaunchEvent ul li img {
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.videosLaunchEvent ul li p {
+  font-size: 14px;
+  padding-top: 16px;
+}
+
+.modal-body {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.skillItemWord {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.videoPrincipal {
+  width: 100%;
+  max-width: 490px;
+  position: relative;
+  height: 475px;
+}
+
+.videoPrincipal iframe {
+  width: 100%;
+  min-width: 400px;
+  max-width: 500px;
+  position: absolute;
+  vertical-align: top;
+}
+
+.videoMenu ul {
+  margin: 0;
+  padding: 0;
+  max-width: 700px;
+}
+
+.videoMenu ul li {
+  display: inline-block;
+  max-width: 162px;
+  margin: 0em 0.4em 2.2em 0.4em;
+  width: 30%;
+}
+
+.videoMenu ul li img {
+  width: 100%;
+}
+
+.videoMenu ul li:hover {
+  cursor: pointer;
+}
+
+.skillsIcons {
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.skillsIcons img {
+  width: 40px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.skillsIcons p {
+  display: inline-block;
+}
+
+.btnSkillsList {
+  position: relative;
+  float: right;
+  right: -150px;
+  top: -20px;
+}
+
+.openCallItem img {
+  width: 100%;
+}
+
+#block-views-block-news-block-1-3,
+#block-views-block-blog-post-block-1,
+#block-views-block-coalition-logos-block-1,
+#block-views-block-media-articles-block-1,
+#block-views-block-allnewspresssection-block-1,
+#block-views-block-network-partner-block-1,
+#block-views-block-coalition-logos-block-1-2,
+#block-newsaboutthecoalitionsection,
+#block-views-block-internalnews-block {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2em auto;
+}
+
+#block-views-block-coalition-logos-block-1,
+#block-views-block-news-block-1-3,
+#block-views-block-media-articles-block-1,
+#block-newsaboutthecoalitionsection,
+#block-views-block-internalnews-block {
+  text-align: center;
+}
+
+#block-views-block-news-block-1 ul,
+#block-views-block-news-block-1-2 ul,
+#block-views-block-news-block-1-3 ul,
+#block-views-block-allnewspresssection-block-1 ul,
+#block-views-block-coalition-logos-block-1 ul,
+#block-views-block-media-articles-block-1 ul,
+#block-views-block-network-partner-block-1 ul,
+#block-views-block-coalition-logos-block-1-2 ul,
+#block-newsaboutthecoalitionsection ul,
+#block-views-block-internalnews-block ul {
+  margin: 0;
+  padding: 0;
+}
+
+#block-views-block-network-partner-block-1 ul {
+  text-align: center;
+}
+
+#block-views-block-news-block-1 ul li,
+#block-views-block-news-block-1-2 ul li,
+#block-views-block-allnewspresssection-block-1 ul li,
+#block-views-block-news-block-1-3 ul li,
+#block-newsaboutthecoalitionsection ul li,
+#block-views-block-internalnews-block ul li {
+  display: inline-block;
+  min-width: 240px;
+  width: 20%;
+  margin: 2em 1em;
+  vertical-align: top;
+}
+
+#block-views-block-coalition-logos-block-1 ul li {
+  width: 132px;
+  height: 88px;
+}
+#block-views-block-coalition-logos-block-1 ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+#block-views-block-news-block-1-3 ul li,
+#block-views-block-allnewspresssection-block-1 ul li,
+#block-newsaboutthecoalitionsection ul li,
+#block-views-block-internalnews-block ul li {
+  text-align: left;
+}
+
+#block-views-block-news-block-1 ul li span,
+#block-views-block-news-block-1-2 ul li span,
+#block-views-block-news-block-1-3 ul li span,
+#block-views-block-allnewspresssection-block-1 ul li span,
+#block-newsaboutthecoalitionsection ul li span,
+#block-views-block-internalnews-block ul li span {
+  background-color: #363d4a;
+  color: #fff;
+  padding: 0.3em 1em;
+}
+
+#block-views-block-news-block-1 ul li h5,
+#block-views-block-news-block-1-2 ul li h5,
+#block-views-block-news-block-1-3 ul li h5,
+#block-views-block-allnewspresssection-block-1 ul li h5,
+#block-newsaboutthecoalitionsection ul li h5,
+#block-views-block-internalnews-block ul li h5 {
+  margin-top: 1em;
+  font-size: 18px;
+  line-height: 1.1 !important;
+  font-family: Gotham-Bold;
+}
+
+#block-views-block-internalnews-block ul li h5 a {
+  color: #363d4a;
+  text-decoration: none;
+}
+
+#block-views-block-news-block-1 ul li p,
+#block-views-block-news-block-1-2 ul li p,
+#block-views-block-news-block-1-3 ul li p,
+#block-views-block-allnewspresssection-block-1 ul li p,
+#block-newsaboutthecoalitionsection ul li p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 14px;
+}
+
+#block-views-block-news-block-1 ul li a,
+#block-views-block-news-block-1-2 ul li a,
+#block-views-block-news-block-1-3 ul li a,
+#block-views-block-allnewspresssection-block-1 ul li a,
+#block-newsaboutthecoalitionsection ul li a {
+  color: #507ed2;
+  font-weight: bold;
+}
+
+#block-views-block-news-block-1 ul li a:hover,
+#block-views-block-news-block-1-2 ul li a:hover,
+#block-views-block-news-block-1-3 ul li a:hover,
+#block-views-block-allnewspresssection-block-1 ul li a:hover,
+#block-newsaboutthecoalitionsection ul li a:hover {
+  text-decoration: none;
+}
+
+#block-views-block-partnerslogos-block-1 {
+  display: block;
+  max-width: 1200px;
+  margin: 2em auto;
+  width: 100%;
+}
+
+#block-views-block-partnerslogos-block-1 ul {
+  margin: 0;
+}
+
+#block-views-block-network-partner-block-1 {
+  min-height: 75vh;
+}
+
+#block-views-block-partnerslogos-block-1 ul li,
+#block-views-block-coalition-logos-block-1 ul li,
+#block-views-block-network-partner-block-1 ul li,
+#block-views-block-coalition-logos-block-1-2 ul li {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+#block-views-block-media-articles-block-1 ul li {
+  width: 120px;
+  height: 120px;
+  margin: 1em 2em;
+  display: inline-block;
+}
+
+#block-views-block-media-articles-block-1 ul li img {
+  width: 120px;
+  height: 120px;
+}
+
+#block-views-block-network-partner-block-1 ul li {
+  width: 180px;
+  margin: 0 1em;
+}
+
+#block-views-block-network-partner-block-1 ul li img {
+  width: 100%;
+  height: auto !important;
+}
+
+#block-views-block-partnerslogos-block-1 ul li img,
+#block-views-block-coalition-logos-block-1 ul li img {
+  width: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(0%);
+}
+
+#block-views-block-partnerslogos-block-1 ul li img:hover,
+#block-views-block-coalition-logos-block-1 ul li img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(100%);
+}
+
+#block-views-block-blog-post-block-1 ul li {
+  display: inline-block;
+  width: 30%;
+  margin: 1em;
+  vertical-align: top;
+  padding-bottom: 1em;
+}
+
+#block-views-block-blog-post-block-1 ul li h5 {
+  min-height: 80px;
+}
+
+#block-views-block-blog-post-block-1 ul li .authorName {
+  display: block;
+  padding-right: 0.5em;
+  margin: 0.5em 0;
+  min-height: 60px;
+}
+
+#block-views-block-blog-post-block-1 ul li ul {
+  padding: 0;
+  margin: 0;
+}
+#block-views-block-blog-post-block-1 ul li ul li {
+  margin: 0;
+  border: 0;
+}
+
+#block-views-block-blog-post-block-1 a {
+  color: #000000;
+}
+
+#block-views-block-blog-post-block-1 a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+#block-views-block-blog-post-block-1 .views-field-field-blog-date {
+  color: #507ed2;
+  margin: 0.5em 0;
+}
+
+#block-views-block-blog-post-block-1 .views-field-field-author,
+#block-views-block-blog-post-block-1 .views-field-field-author-2,
+#block-views-block-blog-post-block-1 .views-field-field-author-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#block-views-block-blog-post-block-1 .views-field-field-author img,
+#block-views-block-blog-post-block-1 .views-field-field-author-2 img,
+#block-views-block-blog-post-block-1 .views-field-field-author-3 img {
+  border-radius: 50%;
+  border: 5px solid #d1d3d4;
+  position: relative;
+  background-color: #d1d3d4;
+}
+
+#block-views-block-blog-post-block-1 .views-field-field-author-2 img,
+#block-views-block-blog-post-block-1 .views-field-field-author-3 img {
+  left: -20px;
+}
+
+#block-views-block-blog-post-block-1 .views-field-field-author-3 img {
+  left: -40px;
+}
+
+.fa-circle {
+  font-size: 15px !important;
+}
+
+.clicLogoHelp {
+  width: 270px;
+  position: relative;
+  top: -26px;
+  margin-left: 20px;
+}
+
+.clicLogoHelp img {
+  width: 100%;
+}
+
+.videoItemLearn iframe {
+  width: 100%;
+}
+
+.itemsSkilsForLifeSeries {
+  width: 500px;
+  display: inline-block;
+  text-align: left;
+}
+
+.itemsSkilsForLifeSeries ul {
+  margin: 0;
+  padding: 0;
+}
+
+.itemsSkilsForLifeSeries ul li {
+  display: block;
+}
+
+.itemsSkilsForLifeSeries .skillSeriesImgBook {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.itemsSkilsForLifeSeries .skillSeriesImgBook p {
+  font-size: 14px;
+}
+.itemsSkilsForLifeSeries .authorsFrame {
+  width: 290px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.itemsSkilsForLifeSeries .skillSeriesImgBook img {
+  width: 100%;
+  transition: transform 0.2s;
+}
+.itemsSkilsForLifeSeries .skillSeriesImgBook img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.bookImageWithScale {
+  transition: transform 0.2s;
+}
+.bookImageWithScale:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.itemsSkilsForLifeSeries .skillsSeriesAuthor p {
+  font-size: 14px;
+}
+
+.itemsSkilsForLifeSeries .skillsSeriesAuthor img {
+  width: 80px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.itemsSkilsForLifeSeries .skillsSeriesAuthor .profilePic {
+  width: 80px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.itemsSkilsForLifeSeries .skillsSeriesAuthor .profileInfo {
+  display: inline-block;
+  width: 60%;
+}
+
+.montanitaCurve {
+  height: 0px;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.montanitaCurve img {
+  position: relative;
+  top: -33px;
+  width: 220px;
+}
+
+.montanitaCurveGris {
+  background-image: url(/themes/twentyfirstcenturyskills/images/montana_gris.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  position: relative;
+  top: -35px;
+}
+
+.blogItem {
+  width: 300px;
+  border-bottom: 1px solid #507ed2;
+  padding-bottom: 1em;
+  display: inline-block;
+  margin: 1em;
+  min-height: 180px;
+}
+
+.blogItem .authorsArea {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  padding-right: 0.5em;
+}
+
+.blogItem .authorsArea ul {
+  margin: 0;
+  padding: 0;
+}
+
+.blogItem .authorsArea ul li {
+  display: inline-block;
+  width: 65px;
+  vertical-align: top;
+}
+
+.blogItem .authorsArea ul li p {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.blogItem .authorsArea ul li:nth-child(2) {
+  position: relative;
+  left: -15px;
+}
+
+.blogItem .authorsArea ul li img {
+  width: 100%;
+}
+
+.blogItem .blogTitle {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.blogItem .blogTitle p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.blogItem .blogTitle p a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.blogItem .blogTitle span {
+  font-size: 14px;
+  color: #507ed2;
+}
+
+#pagnavItems {
+  text-align: left;
+}
+
+#pagnavItems .pager__item--previous {
+  position: relative;
+  top: -300px;
+  left: -100px;
+}
+
+#pagnavItems .pager__item--next {
+  position: relative;
+  right: -220px;
+  float: right;
+  top: -200px;
+}
+
+.views-field-field-socialtwitter {
+  height: 20px;
+  width: 20px;
+  font-size: 21px;
+  background-image: url("/themes/twentyfirstcenturyskills/images/img_twitter_noticias_share_11px18px.jpg");
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  background-size: contain;
+}
+
+.views-field-field-socialtwitter a {
+  color: rgba(0, 0, 0, 0) !important;
+  padding: 10px;
+}
+
+.views-field-field-socialtwitter a:hover {
+  color: rgba(0, 0, 0, 0) !important;
+}
+
+.views-field-field-socialfacebook {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  font-size: 21px;
+  background-image: url("/themes/twentyfirstcenturyskills/images/img_facebook_noticias_share_11px18px.jpg");
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  background-size: contain;
+}
+
+.views-field-field-socialfacebook a {
+  color: rgba(0, 0, 0, 0) !important;
+  padding: 5px;
+}
+
+.views-field-field-socialfacebook a:hover {
+  color: rgba(0, 0, 0, 0) !important;
+}
+.views-field-field-sociallinkedin {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  font-size: 21px;
+  background-image: url("/themes/twentyfirstcenturyskills/images/img_linkedin_noticias_share_11px18px.jpg");
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  background-size: contain;
+  margin-left: 5px;
+}
+
+.views-field-field-sociallinkedin a {
+  color: rgba(0, 0, 0, 0) !important;
+  padding: 10px;
+}
+
+.views-field-field-sociallinkedin a:hover {
+  color: rgba(0, 0, 0, 0) !important;
+}
+
+.registrationIframe {
+  width: 100%;
+  height: 600px;
+}
+
+.menuBid {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.menuBid .logosAndMenu {
+  display: inline-block;
+  width: 260px;
+}
+
+.menuBid .mobileMenu {
+  display: none;
+}
+
+.menuBid .idbLogo {
+  display: inline-block;
+  width: 260px;
+  margin-top: 8px;
+}
+
+.menuBid .idbLogo img {
+  width: 100%;
+}
+
+.menuBid .idbMenuItems {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menuBid .idbMenuItems ul {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.menuBid .idbMenuItems ul li {
+  display: inline-block;
+  padding: 1em 0.3em;
+  text-transform: uppercase;
+}
+
+.menuBid .idbMenuItems ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.menuBid .idbMenuItems ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .bgIndexMainSection,
+  .bgSkillsForLifeSection,
+  .bgPartnersMainSection,
+  .bgAboutUsHeaderMainSection,
+  .bgFutureSection,
+  .bgAboutUsPartnersSections,
+  .bgOurStorySection,
+  .bgSkillsForLifeMainSection,
+  .bgSkillListSec,
+  .bgDisruptingEducationMainSection,
+  .bgTechAndEdSection,
+  .bgContactUsHeaderSection,
+  .bgMediaHeaderSection,
+  .bgSolutionsInterventions,
+  .bgHeaderSolutions,
+  .bgSolutionsSchools,
+  .bgLaborForce,
+  .bgSolutionsSpotlight,
+  .bgPartnersHeaderSection,
+  .bgLetsWorkTogether,
+  .bgTheCoalitionSection,
+  .bgAreYouAnActor,
+  .bgHeaderAssess {
+    background-attachment: initial;
+  }
+
+  .bgSkillsForLifeSection {
+    background-position: right center;
+  }
+
+  .mainNav {
+    top: 70px;
+  }
+
+  .mainNav .logo21 {
+    width: 200px;
+    display: inline-block;
+    transition: width 0.35s ease-in-out;
+    text-align: left;
+  }
+
+  .mainNav .navItems {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .mainNav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mainNav ul li {
+    display: block;
+    width: 100%;
+    background-color: rgba(54, 61, 74, 0.85);
+    padding: 0.5em;
+    border-bottom: 1px solid white;
+  }
+
+  #landingFrame h1 {
+    font-size: 60px;
+  }
+
+  .upperTitle {
+    margin-left: 0;
+    font-size: 38px;
+  }
+
+  .upperTitle.mustardBg {
+    margin-left: 0;
+  }
+
+  .itemSkills {
+    margin-left: 0;
+  }
+
+  #pagnavItems .pager__item--previous {
+    display: none;
+  }
+
+  #pagnavItems .pager__item--next {
+    display: none;
+  }
+
+  .btnSkillsList {
+    position: static;
+    float: none;
+    right: 0;
+    top: 0;
+  }
+
+  .subMenu ul li {
+    margin-top: 1em;
+  }
+
+  .videosLaunchEvent ul li {
+    width: 85%;
+  }
+
+  .btnTransparent a {
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  .itemsSkilsForLifeSeries {
+    display: block;
+    width: 90%;
+  }
+
+  .itemsSkilsForLifeSeries .skillSeriesImgBook {
+    margin: 1em auto;
+    display: block;
+  }
+
+  .mobileMenuBurger {
+    display: block;
+    text-align: left;
+    position: relative;
+  }
+
+  .mobileMenuBurger .logo21 {
+    display: inline-block;
+  }
+
+  #burgerMenu {
+    display: inline-block;
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 36px;
+    cursor: pointer;
+  }
+
+  .mainNav .listItemsMainMenu {
+    display: none;
+  }
+
+  .mainNav ul li {
+    display: block;
+    width: 100%;
+    background-color: rgba(54, 61, 74, 0.85);
+    padding: 0.5em;
+    border-bottom: 1px solid white;
+    text-align: right;
+    padding-right: 4em;
+  }
+
+  .menuBid .logosAndMenu {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 8px;
+  }
+
+  .menuBid .logosAndMenu .mobileMenu {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    text-align: right;
+    cursor: pointer;
+  }
+
+  .menuBid .logosAndMenu .mobileMenu .fa-bars {
+    color: #00a9ee;
+    font-size: 35px;
+  }
+
+  .menuBid .idbMenuItems {
+    display: none;
+    background-color: #f5f5f5;
+    transition: 0.5s ease-in-out;
+  }
+  .menuBid .idbMenuItems ul li {
+    display: block;
+    padding: 1em 0.3em;
+    margin-left: 1em;
+    border-bottom: 1px solid #00a9ee;
+  }
+
+  .menuBid .idbMenuItems ul li:hover {
+    background-color: #fbfbfb;
+  }
+
+  .menuBid .idbMenuItems ul li a {
+    color: #00a9ee;
+  }
+  .menuBid .idbMenuItems ul li a:hover {
+    color: #00a9ee;
+  }
+
+  .btnLandingNews {
+    position: relative;
+    top: -10px;
+  }
+
+  .videoMenu ul li {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .itemsSkilsForLifeSeries {
+    width: 80%;
+    display: inline-block;
+    margin: 2em auto;
+  }
+}
